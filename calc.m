@@ -1,0 +1,1 @@
+function x = calc(L,x0,node_number,sol_size,sol_t)  x = zeros(node_number,sol_size);  for t = 1:sol_size      xt = expm(-1*L*sol_t(t))*x0;      x(:,t) = xt;  endend
